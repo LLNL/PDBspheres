@@ -1,0 +1,109 @@
+PDBspheres software
+
+Adam T. Zemla, Jonathan E. Allen, Dan Kirshner, Felice C. Lightstone. (2022) "PDBspheres - a method for finding 3D similarities 
+in local regions in proteins", bioRxiv preprint https://doi.org/10.1101/2022.01.04.474934
+
+PDBspheres is a structure-based method for finding and evaluating structural similarities in protein regions relevant to 
+ligand binding. PDBspheres comprises an exhaustive library of protein structure regions (“spheres”) adjacent to complexed 
+ligands derived from the Protein Data Bank (PDB), along with methods to find and evaluate structural matches between a protein 
+of interest and spheres in the library. PDBspheres uses the LGA structure alignment algorithm as the main engine for detecting 
+structure similarities between the protein of interest and template spheres from the library, which currently contains more 
+than 2 million spheres. To assess confidence in structural matches an all-atom-based similarity metric takes sidechain placement 
+into account. 
+
+
+Correspondence should be addressed to:
+Adam T. Zemla
+Global Security Computing Applications
+Lawrence Livermore National Laboratory
+Livermore, CA, 94550, USA
+
+Tel: US +1 (925) 423-5571; 
+Fax: US +1 (925) 423-6437; 
+Email: zemla1@llnl.gov 
+
+
+AVAILABILITY
+The PDBspheres library and scripts how to use the LGA program are made publicly available for download at 
+https://github.com/LLNL/PDBspheres
+
+# Library of PDBspheres compound binding sites:
+Library.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt.zip                    size 147M
+
+# Library of PDBspheres short-peptide binding sites:
+Library.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt.zip                    size 7.6M
+
+# A summary table of predicted pocket-ligands for a structural model of papain-like proteinase (PL2pro model: nCoV_nsp3.6w9c_A.pdb).
+PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt.zip                   size 7.4K
+
+# Results from PDBspheres analysis of pairwise similarities in binding sites between proteins from PDBbind v.2019. 
+PDBspheres.PDBbind_Binding_sites_similarities.GDC_and_affinities.txt.zip   size  21M
+
+# Specifics of assigned EC annotations for each member of created clusters of PDBbind. 
+PDBspheres.PDBbind_Clusters.EC_included.txt.zip                            size  37K
+
+# Specifics of assigned GO annotations for each member of created clusters of PDBbind. 
+PDBspheres.PDBbind_Clusters.GO_included.txt.zip                            size  76K
+
+# Specifics of assigned SCOP annotations for each member of created clusters of PDBbind. 
+PDBspheres.PDBbind_Clusters.SCOP_included.txt.zip                          size  38K
+
+# HTML file allowing interactive overview of predicted clusters of proteins from PDBbind. 
+PDBspheres.PDBbind_Clusters.interactive_plot.html.zip                      size 4.0M
+
+
+SOFTWARE INSTALLATION
+
+1. Download "Library.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt.zip" from: https://github.com/LLNL/PDBspheres
+2. unzip Library.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt.zip
+3. Download "Library.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt.zip" from: https://github.com/LLNL/PDBspheres
+4. unzip Library.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt.zip
+5. Download LGA package (LGA_package_src.tar.gz) from: http://proteinmodel.org/AS2TS/LGA
+6. tar -zxvf LGA_package_src.tar.gz
+7. mv Library.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt LGA_package_src/PDBspheres/
+8. mv Library.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt LGA_package_src/PDBspheres/
+9. Install local version of the PDB database. For example, the "pdbnxyz.ent" files should be made accessible in the folder "LGA_package_src/PDB_local". 
+
+
+USAGE
+     cd LGA_package_src
+     ./runlga.model_sphere_library.pl  model  sphere  library
+
+EXAMPLES OF USAGE
+
+1. Running simple similarity check between PL2pro model ("PDBspheres/nCoV_nsp3.6w9c_A.pdb") and a single  
+   compound (HET: Sphere.Y97.35.7los_B.404_B.12.pdb) binding site sphere from preselected PDBspheres.HET_compound_library.txt
+   
+     cd LGA_package_src
+     ./runlga.model_sphere_library.pl  PDBspheres/nCoV_nsp3.6w9c_A.pdb  Sphere.Y97.35.7los_B.404_B.12.pdb  PDBspheres/PDBspheres.HET_compound_library.txt
+     
+     ./runlga.model_sphere_library.pl  PDBspheres/nCoV_nsp3.6w9c_A.pdb Sphere.ZN.1.7kol_A.505_A.12.pdb     PDBspheres/Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt
+     ./runlga.model_sphere_library.pl  PDBspheres/nCoV_nsp3.6w9c_A.pdb Sphere.GOL.14.6bi8_B.1906_B.12.pdb  PDBspheres/Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt
+
+2. Running simple similarity check between PL2pro model ("PDBspheres/nCoV_nsp3.6w9c_A.pdb") and a single 
+   short-peptide (PEP: Sphere.6wx4.6wx4_D.6wx4_I.5_3_4_30.12.pdb) binding site sphere from preselected PDBspheres.PEP_peptides_library.txt
+
+     cd LGA_package_src
+     ./runlga.model_sphere_library.pl  PDBspheres/nCoV_nsp3.6w9c_A.pdb  Sphere.6wx4.6wx4_D.6wx4_I.5_3_4_30.12.pdb  PDBspheres/PDBspheres.PEP_peptides_library.txt
+
+3. Running similarity check between PL2pro model ("PDBspheres/nCoV_nsp3.6w9c_A.pdb") and 20 compound (HET) sphere binding sites 
+   from preselected PDBspheres.HET_compound_library.txt
+   
+     cd LGA_package_src
+     for s in `cut -f15 -d' ' PDBspheres/PDBspheres.HET_compound_library.txt | cut -f3 -d'/' | sort -n -r -k 3 -t. | head -n 20`; do \
+     ./runlga.model_sphere_library.pl  PDBspheres/nCoV_nsp3.6w9c_A.pdb $s PDBspheres/PDBspheres.HET_compound_library.txt; \
+     done >> TEST.reproduce_results_reported_in_PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt
+
+4. Running similarity check between PL2pro model ("PDBspheres/nCoV_nsp3.6w9c_A.pdb") and short-peptide (PEP) sphere binding sites 
+   from preselected PDBspheres.PEP_peptide_library.txt
+   
+     cd LGA_package_src
+     for s in `cut -f15 -d' ' PDBspheres/PDBspheres.PEP_peptides_library.txt | cut -f3 -d'/'`; do \
+     ./runlga.model_sphere_library.pl  PDBspheres/nCoV_nsp3.6w9c_A.pdb $s PDBspheres/PDBspheres.PEP_peptides_library.txt; \
+     done >> TEST.reproduce_results_reported_in_PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt
+
+5. Results collected in the file: TEST.reproduce_results_reported_in_PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt
+   correspond to the subset of results reported in the PDBspheres manuscript (Fig.4): https://www.biorxiv.org/content/10.1101/2022.01.04.474934v2
+   Please compare with PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt
+
+
