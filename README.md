@@ -34,20 +34,20 @@ https://github.com/LLNL/PDBspheres
 2. Library of PDBspheres short-peptide binding sites:
 - Library.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt.zip                    size 7.6M
 
-3. A summary table of predicted pocket-ligands for a structural model of papain-like proteinase (PL2pro model: nCoV_nsp3.6w9c_A.pdb).
-PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt.zip                   size 7.4K
+3. A summary table of predicted pocket-ligands for a structural model of papain-like proteinase (PL2pro model: nCoV_nsp3.6w9c_A.pdb):
+- PDBspheres.COVID19_PL2pro.protein_ligand_summary.txt.zip                   size 7.4K
 
-4. Results from PDBspheres analysis of pairwise similarities in binding sites between proteins from PDBbind v.2019. 
-PDBspheres.PDBbind_Binding_sites_similarities.GDC_and_affinities.txt.zip   size  21M
+4. Results from PDBspheres analysis of pairwise similarities in binding sites between proteins from PDBbind v.2019: 
+- PDBspheres.PDBbind_Binding_sites_similarities.GDC_and_affinities.txt.zip   size  21M
 
-5. Specifics of assigned EC annotations for each member of created clusters of PDBbind. 
-PDBspheres.PDBbind_Clusters.EC_included.txt.zip                            size  37K
+5. Specifics of assigned EC annotations for each member of created clusters of PDBbind: 
+- PDBspheres.PDBbind_Clusters.EC_included.txt.zip                            size  37K
 
-6. Specifics of assigned GO annotations for each member of created clusters of PDBbind. 
-PDBspheres.PDBbind_Clusters.GO_included.txt.zip                            size  76K
+6. Specifics of assigned GO annotations for each member of created clusters of PDBbind: 
+- PDBspheres.PDBbind_Clusters.GO_included.txt.zip                            size  76K
 
-7. Specifics of assigned SCOP annotations for each member of created clusters of PDBbind. 
-PDBspheres.PDBbind_Clusters.SCOP_included.txt.zip                          size  38K
+7. Specifics of assigned SCOP annotations for each member of created clusters of PDBbind: 
+- PDBspheres.PDBbind_Clusters.SCOP_included.txt.zip                          size  38K
 
-8. HTML file allowing interactive overview of predicted clusters of proteins from PDBbind. 
-PDBspheres.PDBbind_Clusters.interactive_plot.html.zip                      size 4.0M
+8. HTML file allowing interactive overview of predicted clusters of proteins from PDBbind: 
+- PDBspheres.PDBbind_Clusters.interactive_plot.html.zip                      size 4.0M
