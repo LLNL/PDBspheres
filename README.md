@@ -28,7 +28,8 @@ Supplemental Data:
 The PDBspheres library and instructions how to use the LGA program are made publicly available for download at 
 https://github.com/LLNL/PDBspheres
 
-1. Library of PDBspheres compound binding sites.
+1. Library of PDBspheres compound binding sites:
+
 Library.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt.zip                    size 147M
 
 2. Library of PDBspheres short-peptide binding sites.
