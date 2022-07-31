@@ -27,7 +27,7 @@ Supplemental Data:\
 The PDBspheres library and instructions how to use the LGA program are made publicly available for download at 
 https://github.com/LLNL/PDBspheres
 
-1. Library of PDBspheres compound binding sites divided into 11 subsets in the folder PDBspheres-Libraries:\
+1. Library of PDBspheres compound binding sites divided into 11 subsets in the folder PDBspheres-Libraries:
 - Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_01.zip                      size  22M
 - Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_02.zip                      size  22M
 - Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_03.zip                      size  22M
