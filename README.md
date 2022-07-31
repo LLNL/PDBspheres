@@ -8,8 +8,8 @@ structure similarities between the protein of interest and template spheres from
 than 2 million spheres. To assess confidence in structural matches an all-atom-based similarity metric takes sidechain placement 
 into account. 
 
-Manuscript submitted to bioRxiv:
-- Adam T. Zemla, Jonathan E. Allen, Dan Kirshner, Felice C. Lightstone. (2022) "PDBspheres - a method for finding 3D similarities 
+Manuscript submitted to bioRxiv:\
+Adam T. Zemla, Jonathan E. Allen, Dan Kirshner, Felice C. Lightstone. (2022) "PDBspheres - a method for finding 3D similarities 
 in local regions in proteins", bioRxiv preprint https://doi.org/10.1101/2022.01.04.474934
 
 Correspondence should be addressed to:
