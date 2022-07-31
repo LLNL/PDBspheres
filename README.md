@@ -21,7 +21,7 @@ Tel: US +1 (925) 423-5571\
 Mobile1: (925) 724-7948\
 Mobile2: (925) 759-4119\
 Fax: US +1 (925) 423-6437\
-Email: zemla1@llnl.gov\
+Email: zemla1@llnl.gov
 
 Supplemental Data:\
 The PDBspheres library and instructions how to use the LGA program are made publicly available for download at 
