@@ -9,22 +9,32 @@ than 2 million spheres. To assess confidence in structural matches an all-atom-b
 into account. 
 
 Manuscript submitted to bioRxiv:
+
 Adam T. Zemla, Jonathan E. Allen, Dan Kirshner, Felice C. Lightstone. (2022) "PDBspheres - a method for finding 3D similarities 
 in local regions in proteins", bioRxiv preprint https://doi.org/10.1101/2022.01.04.474934
 
 Correspondence should be addressed to:
+
 Adam T. Zemla
+
 Global Security Computing Applications
+
 Lawrence Livermore National Laboratory
+
 Livermore, CA, 94550, USA
 
 Tel: US +1 (925) 423-5571
+
 Mobile1: (925) 724-7948
+
 Mobile2: (925) 759-4119
+
 Fax: US +1 (925) 423-6437 
+
 Email: zemla1@llnl.gov 
 
 Supplemental Data:
+
 The PDBspheres library and instructions how to use the LGA program are made publicly available for download at 
 https://github.com/LLNL/PDBspheres
 
