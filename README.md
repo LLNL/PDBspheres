@@ -28,10 +28,20 @@ Supplemental Data:
 The PDBspheres library and instructions how to use the LGA program are made publicly available for download at 
 https://github.com/LLNL/PDBspheres
 
-1. Library of PDBspheres compound binding sites:
-- Library.Pdb_HET.at_least_1_HETATM_and_5_CA.list.txt.zip                    size 147M
+1. Library of PDBspheres compound binding sites divided into 11 subsets in the folder PDBspheres-Libraries:
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_01.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_02.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_03.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_04.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_05.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_06.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_07.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_08.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_09.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_10.zip                      size  22M
+- Pdb_HET.at_least_1_HETATM_and_5_CA.list.Subset_11.zip                      size  22M
 
-2. Library of PDBspheres short-peptide binding sites:
+2. Library of PDBspheres short-peptide binding sites in the folder PDBspheres-Libraries:
 - Library.Pdb_PEP.peptide_25_and_sphere_5_CA.list.txt.zip                    size 7.6M
 
 3. A summary table of predicted pocket-ligands for a structural model of papain-like proteinase (PL2pro model: nCoV_nsp3.6w9c_A.pdb):
